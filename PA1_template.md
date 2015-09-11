@@ -1,4 +1,9 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
 
 ## Loading and preprocessing the data
@@ -34,7 +39,7 @@ hist(datesum$totalsteps, main="Histogram of Total Steps Per Day",
      xlab="Total Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
 
 ```r
 cat("Mean Steps per Day: ",mean(datesum$totalsteps))
@@ -65,7 +70,7 @@ plot(intervalmean$interval,intervalmean$steps,type="l",ylab="Number of Steps",
         xlab="Five Minute Interval")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 ```r
 cat("Max Average Step Interval: ",which.max(intervalmean[,2]),
@@ -114,7 +119,7 @@ hist(fillinsum$totalsteps, main="Histogram of Total Steps Per Day",
      xlab="Total Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
 
 ```r
 cat("Filled-in Mean Steps per Day: ",mean(fillinsum$totalsteps))
@@ -169,7 +174,7 @@ plot(fimwd$interval,
         xlab="Five Minute Interval")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
 
 There is definitely a difference in activity between weekends and weekdays, as
 the plots above show.
